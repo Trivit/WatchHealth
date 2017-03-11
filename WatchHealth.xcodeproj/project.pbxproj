@@ -1,0 +1,842 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D22B5F01E2597C700D5B7F6 /* CoreMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D22B5EF1E2597C700D5B7F6 /* CoreMotionManager.swift */; };
+		3DAAA6261E16BE750070F43F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAAA6251E16BE750070F43F /* AppDelegate.swift */; };
+		3DAAA6281E16BE750070F43F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAAA6271E16BE750070F43F /* ViewController.swift */; };
+		3DAAA62B1E16BE750070F43F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAAA6291E16BE750070F43F /* Main.storyboard */; };
+		3DAAA62D1E16BE750070F43F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DAAA62C1E16BE750070F43F /* Assets.xcassets */; };
+		3DAAA6301E16BE750070F43F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAAA62E1E16BE750070F43F /* LaunchScreen.storyboard */; };
+		3DAAA63B1E16BE760070F43F /* WatchHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAAA63A1E16BE760070F43F /* WatchHealthTests.swift */; };
+		3DAAA6461E16BE760070F43F /* WatchHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAAA6451E16BE760070F43F /* WatchHealthUITests.swift */; };
+		3DAAA64B1E16BE760070F43F /* WatchHealth WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3DAAA64A1E16BE760070F43F /* WatchHealth WatchKit App.app */; };
+		3DAAA6511E16BE760070F43F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAAA64F1E16BE760070F43F /* Interface.storyboard */; };
+		3DAAA6531E16BE760070F43F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DAAA6521E16BE760070F43F /* Assets.xcassets */; };
+		3DAAA65A1E16BE760070F43F /* WatchHealth WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3DAAA6591E16BE760070F43F /* WatchHealth WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3DAAA6611E16BE760070F43F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAAA6601E16BE760070F43F /* InterfaceController.swift */; };
+		3DAAA6631E16BE760070F43F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAAA6621E16BE760070F43F /* ExtensionDelegate.swift */; };
+		3DAAA6651E16BE760070F43F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAAA6641E16BE760070F43F /* NotificationController.swift */; };
+		3DAAA6671E16BE760070F43F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAAA6661E16BE760070F43F /* ComplicationController.swift */; };
+		3DAAA6691E16BE760070F43F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DAAA6681E16BE760070F43F /* Assets.xcassets */; };
+		3DB3FE6D1E1E99C100EA0405 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB3FE6C1E1E99C100EA0405 /* HealthKit.framework */; };
+		3DB3FE6F1E1EA72C00EA0405 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB3FE6E1E1EA72C00EA0405 /* HealthKitManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DAAA6371E16BE760070F43F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DAAA61A1E16BE750070F43F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DAAA6211E16BE750070F43F;
+			remoteInfo = WatchHealth;
+		};
+		3DAAA6421E16BE760070F43F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DAAA61A1E16BE750070F43F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DAAA6211E16BE750070F43F;
+			remoteInfo = WatchHealth;
+		};
+		3DAAA64C1E16BE760070F43F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DAAA61A1E16BE750070F43F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DAAA6491E16BE760070F43F;
+			remoteInfo = "WatchHealth WatchKit App";
+		};
+		3DAAA65B1E16BE760070F43F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DAAA61A1E16BE750070F43F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DAAA6581E16BE760070F43F;
+			remoteInfo = "WatchHealth WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3DAAA6701E16BE760070F43F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3DAAA65A1E16BE760070F43F /* WatchHealth WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DAAA6741E16BE760070F43F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3DAAA64B1E16BE760070F43F /* WatchHealth WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3D22B5EF1E2597C700D5B7F6 /* CoreMotionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreMotionManager.swift; sourceTree = "<group>"; };
+		3DAAA6221E16BE750070F43F /* WatchHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DAAA6251E16BE750070F43F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DAAA6271E16BE750070F43F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DAAA62A1E16BE750070F43F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DAAA62C1E16BE750070F43F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DAAA62F1E16BE750070F43F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DAAA6311E16BE760070F43F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DAAA6361E16BE760070F43F /* WatchHealthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchHealthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DAAA63A1E16BE760070F43F /* WatchHealthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchHealthTests.swift; sourceTree = "<group>"; };
+		3DAAA63C1E16BE760070F43F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DAAA6411E16BE760070F43F /* WatchHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DAAA6451E16BE760070F43F /* WatchHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchHealthUITests.swift; sourceTree = "<group>"; };
+		3DAAA6471E16BE760070F43F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DAAA64A1E16BE760070F43F /* WatchHealth WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchHealth WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DAAA6501E16BE760070F43F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3DAAA6521E16BE760070F43F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DAAA6541E16BE760070F43F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DAAA6591E16BE760070F43F /* WatchHealth WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchHealth WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DAAA65F1E16BE760070F43F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		3DAAA6601E16BE760070F43F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		3DAAA6621E16BE760070F43F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3DAAA6641E16BE760070F43F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		3DAAA6661E16BE760070F43F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		3DAAA6681E16BE760070F43F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DAAA66A1E16BE760070F43F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB3FE661E1D8C6D00EA0405 /* WatchHealth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WatchHealth.entitlements; sourceTree = "<group>"; };
+		3DB3FE6C1E1E99C100EA0405 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		3DB3FE6E1E1EA72C00EA0405 /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DAAA61F1E16BE750070F43F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB3FE6D1E1E99C100EA0405 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DAAA6331E16BE760070F43F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DAAA63E1E16BE760070F43F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DAAA6561E16BE760070F43F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DAAA6191E16BE750070F43F = {
+			isa = PBXGroup;
+			children = (
+				3DAAA6241E16BE750070F43F /* WatchHealth */,
+				3DAAA6391E16BE760070F43F /* WatchHealthTests */,
+				3DAAA6441E16BE760070F43F /* WatchHealthUITests */,
+				3DAAA64E1E16BE760070F43F /* WatchHealth WatchKit App */,
+				3DAAA65D1E16BE760070F43F /* WatchHealth WatchKit Extension */,
+				3DAAA6231E16BE750070F43F /* Products */,
+				3DB3FE671E1D8C6D00EA0405 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3DAAA6231E16BE750070F43F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DAAA6221E16BE750070F43F /* WatchHealth.app */,
+				3DAAA6361E16BE760070F43F /* WatchHealthTests.xctest */,
+				3DAAA6411E16BE760070F43F /* WatchHealthUITests.xctest */,
+				3DAAA64A1E16BE760070F43F /* WatchHealth WatchKit App.app */,
+				3DAAA6591E16BE760070F43F /* WatchHealth WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DAAA6241E16BE750070F43F /* WatchHealth */ = {
+			isa = PBXGroup;
+			children = (
+				3DB3FE661E1D8C6D00EA0405 /* WatchHealth.entitlements */,
+				3DAAA6251E16BE750070F43F /* AppDelegate.swift */,
+				3DAAA6271E16BE750070F43F /* ViewController.swift */,
+				3DAAA6291E16BE750070F43F /* Main.storyboard */,
+				3DAAA62C1E16BE750070F43F /* Assets.xcassets */,
+				3DAAA62E1E16BE750070F43F /* LaunchScreen.storyboard */,
+				3DAAA6311E16BE760070F43F /* Info.plist */,
+			);
+			path = WatchHealth;
+			sourceTree = "<group>";
+		};
+		3DAAA6391E16BE760070F43F /* WatchHealthTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DAAA63A1E16BE760070F43F /* WatchHealthTests.swift */,
+				3DAAA63C1E16BE760070F43F /* Info.plist */,
+			);
+			path = WatchHealthTests;
+			sourceTree = "<group>";
+		};
+		3DAAA6441E16BE760070F43F /* WatchHealthUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3DAAA6451E16BE760070F43F /* WatchHealthUITests.swift */,
+				3DAAA6471E16BE760070F43F /* Info.plist */,
+			);
+			path = WatchHealthUITests;
+			sourceTree = "<group>";
+		};
+		3DAAA64E1E16BE760070F43F /* WatchHealth WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3DAAA64F1E16BE760070F43F /* Interface.storyboard */,
+				3DAAA6521E16BE760070F43F /* Assets.xcassets */,
+				3DAAA6541E16BE760070F43F /* Info.plist */,
+			);
+			path = "WatchHealth WatchKit App";
+			sourceTree = "<group>";
+		};
+		3DAAA65D1E16BE760070F43F /* WatchHealth WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3DAAA6601E16BE760070F43F /* InterfaceController.swift */,
+				3DAAA6621E16BE760070F43F /* ExtensionDelegate.swift */,
+				3DAAA6641E16BE760070F43F /* NotificationController.swift */,
+				3DAAA6661E16BE760070F43F /* ComplicationController.swift */,
+				3DAAA6681E16BE760070F43F /* Assets.xcassets */,
+				3DAAA66A1E16BE760070F43F /* Info.plist */,
+				3DAAA65E1E16BE760070F43F /* Supporting Files */,
+				3DB3FE6E1E1EA72C00EA0405 /* HealthKitManager.swift */,
+				3D22B5EF1E2597C700D5B7F6 /* CoreMotionManager.swift */,
+			);
+			path = "WatchHealth WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		3DAAA65E1E16BE760070F43F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DAAA65F1E16BE760070F43F /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DB3FE671E1D8C6D00EA0405 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DB3FE6C1E1E99C100EA0405 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DAAA6211E16BE750070F43F /* WatchHealth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DAAA6751E16BE760070F43F /* Build configuration list for PBXNativeTarget "WatchHealth" */;
+			buildPhases = (
+				3DAAA61E1E16BE750070F43F /* Sources */,
+				3DAAA61F1E16BE750070F43F /* Frameworks */,
+				3DAAA6201E16BE750070F43F /* Resources */,
+				3DAAA6741E16BE760070F43F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DAAA64D1E16BE760070F43F /* PBXTargetDependency */,
+			);
+			name = WatchHealth;
+			productName = WatchHealth;
+			productReference = 3DAAA6221E16BE750070F43F /* WatchHealth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DAAA6351E16BE760070F43F /* WatchHealthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DAAA6781E16BE760070F43F /* Build configuration list for PBXNativeTarget "WatchHealthTests" */;
+			buildPhases = (
+				3DAAA6321E16BE760070F43F /* Sources */,
+				3DAAA6331E16BE760070F43F /* Frameworks */,
+				3DAAA6341E16BE760070F43F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DAAA6381E16BE760070F43F /* PBXTargetDependency */,
+			);
+			name = WatchHealthTests;
+			productName = WatchHealthTests;
+			productReference = 3DAAA6361E16BE760070F43F /* WatchHealthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3DAAA6401E16BE760070F43F /* WatchHealthUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DAAA67B1E16BE760070F43F /* Build configuration list for PBXNativeTarget "WatchHealthUITests" */;
+			buildPhases = (
+				3DAAA63D1E16BE760070F43F /* Sources */,
+				3DAAA63E1E16BE760070F43F /* Frameworks */,
+				3DAAA63F1E16BE760070F43F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DAAA6431E16BE760070F43F /* PBXTargetDependency */,
+			);
+			name = WatchHealthUITests;
+			productName = WatchHealthUITests;
+			productReference = 3DAAA6411E16BE760070F43F /* WatchHealthUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3DAAA6491E16BE760070F43F /* WatchHealth WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DAAA6711E16BE760070F43F /* Build configuration list for PBXNativeTarget "WatchHealth WatchKit App" */;
+			buildPhases = (
+				3DAAA6481E16BE760070F43F /* Resources */,
+				3DAAA6701E16BE760070F43F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DAAA65C1E16BE760070F43F /* PBXTargetDependency */,
+			);
+			name = "WatchHealth WatchKit App";
+			productName = "WatchHealth WatchKit App";
+			productReference = 3DAAA64A1E16BE760070F43F /* WatchHealth WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3DAAA6581E16BE760070F43F /* WatchHealth WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DAAA66D1E16BE760070F43F /* Build configuration list for PBXNativeTarget "WatchHealth WatchKit Extension" */;
+			buildPhases = (
+				3DAAA6551E16BE760070F43F /* Sources */,
+				3DAAA6561E16BE760070F43F /* Frameworks */,
+				3DAAA6571E16BE760070F43F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchHealth WatchKit Extension";
+			productName = "WatchHealth WatchKit Extension";
+			productReference = 3DAAA6591E16BE760070F43F /* WatchHealth WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DAAA61A1E16BE750070F43F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = TRIVIT;
+				TargetAttributes = {
+					3DAAA6211E16BE750070F43F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = K935EAHDK7;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					3DAAA6351E16BE760070F43F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3DAAA6211E16BE750070F43F;
+					};
+					3DAAA6401E16BE760070F43F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3DAAA6211E16BE750070F43F;
+					};
+					3DAAA6491E16BE760070F43F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					3DAAA6581E16BE760070F43F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3DAAA61D1E16BE750070F43F /* Build configuration list for PBXProject "WatchHealth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DAAA6191E16BE750070F43F;
+			productRefGroup = 3DAAA6231E16BE750070F43F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DAAA6211E16BE750070F43F /* WatchHealth */,
+				3DAAA6351E16BE760070F43F /* WatchHealthTests */,
+				3DAAA6401E16BE760070F43F /* WatchHealthUITests */,
+				3DAAA6491E16BE760070F43F /* WatchHealth WatchKit App */,
+				3DAAA6581E16BE760070F43F /* WatchHealth WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DAAA6201E16BE750070F43F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DAAA6301E16BE750070F43F /* LaunchScreen.storyboard in Resources */,
+				3DAAA62D1E16BE750070F43F /* Assets.xcassets in Resources */,
+				3DAAA62B1E16BE750070F43F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DAAA6341E16BE760070F43F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DAAA63F1E16BE760070F43F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DAAA6481E16BE760070F43F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DAAA6531E16BE760070F43F /* Assets.xcassets in Resources */,
+				3DAAA6511E16BE760070F43F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DAAA6571E16BE760070F43F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DAAA6691E16BE760070F43F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DAAA61E1E16BE750070F43F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DAAA6281E16BE750070F43F /* ViewController.swift in Sources */,
+				3DAAA6261E16BE750070F43F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DAAA6321E16BE760070F43F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DAAA63B1E16BE760070F43F /* WatchHealthTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DAAA63D1E16BE760070F43F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DAAA6461E16BE760070F43F /* WatchHealthUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DAAA6551E16BE760070F43F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DAAA6651E16BE760070F43F /* NotificationController.swift in Sources */,
+				3DAAA6671E16BE760070F43F /* ComplicationController.swift in Sources */,
+				3DAAA6631E16BE760070F43F /* ExtensionDelegate.swift in Sources */,
+				3DB3FE6F1E1EA72C00EA0405 /* HealthKitManager.swift in Sources */,
+				3D22B5F01E2597C700D5B7F6 /* CoreMotionManager.swift in Sources */,
+				3DAAA6611E16BE760070F43F /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DAAA6381E16BE760070F43F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DAAA6211E16BE750070F43F /* WatchHealth */;
+			targetProxy = 3DAAA6371E16BE760070F43F /* PBXContainerItemProxy */;
+		};
+		3DAAA6431E16BE760070F43F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DAAA6211E16BE750070F43F /* WatchHealth */;
+			targetProxy = 3DAAA6421E16BE760070F43F /* PBXContainerItemProxy */;
+		};
+		3DAAA64D1E16BE760070F43F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DAAA6491E16BE760070F43F /* WatchHealth WatchKit App */;
+			targetProxy = 3DAAA64C1E16BE760070F43F /* PBXContainerItemProxy */;
+		};
+		3DAAA65C1E16BE760070F43F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DAAA6581E16BE760070F43F /* WatchHealth WatchKit Extension */;
+			targetProxy = 3DAAA65B1E16BE760070F43F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DAAA6291E16BE750070F43F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DAAA62A1E16BE750070F43F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DAAA62E1E16BE750070F43F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DAAA62F1E16BE750070F43F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3DAAA64F1E16BE760070F43F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DAAA6501E16BE760070F43F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DAAA66B1E16BE760070F43F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DAAA66C1E16BE760070F43F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DAAA66E1E16BE760070F43F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "WatchHealth WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UMass.WatchHealth.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		3DAAA66F1E16BE760070F43F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "WatchHealth WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UMass.WatchHealth.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		3DAAA6721E16BE760070F43F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = WatchHealth_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchHealth WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = UMass.WatchHealth.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		3DAAA6731E16BE760070F43F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = WatchHealth_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchHealth WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = UMass.WatchHealth.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		3DAAA6761E16BE760070F43F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WatchHealth/WatchHealth.entitlements;
+				DEVELOPMENT_TEAM = K935EAHDK7;
+				INFOPLIST_FILE = WatchHealth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UMass.WatchHealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3DAAA6771E16BE760070F43F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WatchHealth/WatchHealth.entitlements;
+				DEVELOPMENT_TEAM = K935EAHDK7;
+				INFOPLIST_FILE = WatchHealth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UMass.WatchHealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3DAAA6791E16BE760070F43F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WatchHealthTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UMass.WatchHealthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchHealth.app/WatchHealth";
+			};
+			name = Debug;
+		};
+		3DAAA67A1E16BE760070F43F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WatchHealthTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UMass.WatchHealthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchHealth.app/WatchHealth";
+			};
+			name = Release;
+		};
+		3DAAA67C1E16BE760070F43F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = WatchHealthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UMass.WatchHealthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WatchHealth;
+			};
+			name = Debug;
+		};
+		3DAAA67D1E16BE760070F43F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = WatchHealthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UMass.WatchHealthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WatchHealth;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DAAA61D1E16BE750070F43F /* Build configuration list for PBXProject "WatchHealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DAAA66B1E16BE760070F43F /* Debug */,
+				3DAAA66C1E16BE760070F43F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DAAA66D1E16BE760070F43F /* Build configuration list for PBXNativeTarget "WatchHealth WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DAAA66E1E16BE760070F43F /* Debug */,
+				3DAAA66F1E16BE760070F43F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DAAA6711E16BE760070F43F /* Build configuration list for PBXNativeTarget "WatchHealth WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DAAA6721E16BE760070F43F /* Debug */,
+				3DAAA6731E16BE760070F43F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DAAA6751E16BE760070F43F /* Build configuration list for PBXNativeTarget "WatchHealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DAAA6761E16BE760070F43F /* Debug */,
+				3DAAA6771E16BE760070F43F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DAAA6781E16BE760070F43F /* Build configuration list for PBXNativeTarget "WatchHealthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DAAA6791E16BE760070F43F /* Debug */,
+				3DAAA67A1E16BE760070F43F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DAAA67B1E16BE760070F43F /* Build configuration list for PBXNativeTarget "WatchHealthUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DAAA67C1E16BE760070F43F /* Debug */,
+				3DAAA67D1E16BE760070F43F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DAAA61A1E16BE750070F43F /* Project object */;
+}
